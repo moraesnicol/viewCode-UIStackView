@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		C008DBFF26D051EC006BCA7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C008DBFE26D051EC006BCA7A /* AppDelegate.swift */; };
 		C008DC0126D051EC006BCA7A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C008DC0026D051EC006BCA7A /* SceneDelegate.swift */; };
-		C008DC0326D051EC006BCA7A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C008DC0226D051EC006BCA7A /* ViewController.swift */; };
-		C008DC0626D051EC006BCA7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C008DC0426D051EC006BCA7A /* Main.storyboard */; };
+		C008DC0326D051EC006BCA7A /* StackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C008DC0226D051EC006BCA7A /* StackViewController.swift */; };
 		C008DC0826D051EF006BCA7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C008DC0726D051EF006BCA7A /* Assets.xcassets */; };
 		C008DC0B26D051EF006BCA7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C008DC0926D051EF006BCA7A /* LaunchScreen.storyboard */; };
+		C008DC1826D053C6006BCA7A /* SurveyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C008DC1726D053C6006BCA7A /* SurveyButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C008DBFB26D051EC006BCA7A /* viewCode-UIStackView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "viewCode-UIStackView.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C008DBFE26D051EC006BCA7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C008DC0026D051EC006BCA7A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C008DC0226D051EC006BCA7A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C008DC0526D051EC006BCA7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C008DC0226D051EC006BCA7A /* StackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewController.swift; sourceTree = "<group>"; };
 		C008DC0726D051EF006BCA7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C008DC0A26D051EF006BCA7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C008DC0C26D051EF006BCA7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C008DC1726D053C6006BCA7A /* SurveyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +56,39 @@
 		C008DBFD26D051EC006BCA7A /* viewCode-UIStackView */ = {
 			isa = PBXGroup;
 			children = (
-				C008DBFE26D051EC006BCA7A /* AppDelegate.swift */,
-				C008DC0026D051EC006BCA7A /* SceneDelegate.swift */,
-				C008DC0226D051EC006BCA7A /* ViewController.swift */,
-				C008DC0426D051EC006BCA7A /* Main.storyboard */,
-				C008DC0726D051EF006BCA7A /* Assets.xcassets */,
-				C008DC0926D051EF006BCA7A /* LaunchScreen.storyboard */,
+				C008DC1226D05333006BCA7A /* Application */,
+				C008DC1326D05342006BCA7A /* Resources */,
+				C008DC1426D05353006BCA7A /* Source */,
 				C008DC0C26D051EF006BCA7A /* Info.plist */,
 			);
 			path = "viewCode-UIStackView";
+			sourceTree = "<group>";
+		};
+		C008DC1226D05333006BCA7A /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				C008DBFE26D051EC006BCA7A /* AppDelegate.swift */,
+				C008DC0026D051EC006BCA7A /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		C008DC1326D05342006BCA7A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C008DC0726D051EF006BCA7A /* Assets.xcassets */,
+				C008DC0926D051EF006BCA7A /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C008DC1426D05353006BCA7A /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				C008DC0226D051EC006BCA7A /* StackViewController.swift */,
+				C008DC1726D053C6006BCA7A /* SurveyButton.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +150,6 @@
 			files = (
 				C008DC0B26D051EF006BCA7A /* LaunchScreen.storyboard in Resources */,
 				C008DC0826D051EF006BCA7A /* Assets.xcassets in Resources */,
-				C008DC0626D051EC006BCA7A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,23 +160,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C008DC0326D051EC006BCA7A /* ViewController.swift in Sources */,
+				C008DC0326D051EC006BCA7A /* StackViewController.swift in Sources */,
 				C008DBFF26D051EC006BCA7A /* AppDelegate.swift in Sources */,
 				C008DC0126D051EC006BCA7A /* SceneDelegate.swift in Sources */,
+				C008DC1826D053C6006BCA7A /* SurveyButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C008DC0426D051EC006BCA7A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C008DC0526D051EC006BCA7A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C008DC0926D051EF006BCA7A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
